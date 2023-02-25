@@ -1,8 +1,8 @@
 name: building youtube-dl using snapcraft
 on:
   push:
-    # branches: [ main ]
-    tags: ['v*', 'pre*']
+    branches: [ main ]
+    # tags: ['v*', 'pre*']
 
 jobs:
   build:
