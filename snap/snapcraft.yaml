@@ -5,8 +5,8 @@ description: |
       line and with all the features and patches of youtube-dlc in addition
       to the latest youtube-dl.
 
-#version: git
-adopt-info: yt-dlp
+version: git
+# adopt-info: yt-dlp
 
 grade: stable
 confinement: devmode
@@ -24,7 +24,7 @@ parts:
     plugin: python
     source: https://github.com/yt-dlp/yt-dlp.git
     # https://forum.snapcraft.io/t/git-error-while-building-snap/10130 advice
-    override-build: |
-      snapcraftctl build
-      snapcraftctl set-version $(git describe --tags)
+    # override-build: |
+    #   snapcraftctl build
+    #   snapcraftctl set-version $(git describe --tags)
 
